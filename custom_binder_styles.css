@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/**
+ * jupyter-notebooks-comps
+ * Style Context, Title or Description
+ *
+ * @author psylwester(at)intven(dot)com
+ * @version 1.00, 2022/09/08
+ * 
+ */
+
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+hr 
+{
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 3px solid gold;
+  color: transparent !important;
+}
+
+body 
+{
+  font-family: "IBM Plex Sans", "Calibri", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+}
+
+pre, code, kbd, samp
+{
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.4;
+}
+
+div.output_area pre {
+  font-family: unset;
+}
+
+body.notebook_app 
+{
+  background-color: #0072a2;
+}
+
+div#notebook
+{
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+div#notebook-container .code_cell.rendered:nth-child(2)
+{
+  display: none;
+}
+
+div.text_cell.rendered .rendered_html 
+{
+  max-width: 72rem;
+  padding-left: 3.2rem;
+  overflow: visible;
+}
+
+div.text_cell.rendered .rendered_html h3
+{
+  text-indent: -2rem;
+  padding-bottom: 1em;
+  color: #cc0000;
+}
+
+div.input_area 
+{
+  background: #f9f9ec;
+  padding: 3px 6px;
+}
+
+div.output_subarea
+{
+  background: lightgoldenrodyellow;
+  border: 1px dotted goldenrod;
+  padding-left: 0.5em;
+}
+
+div.rendered_html ul li,
+div.rendered_html ol li 
+{
+  line-height: 1.8;
+}
+
+/* CODE OVERRIDES */
+
+.CodeMirror pre.CodeMirror-line, 
+.CodeMirror pre.CodeMirror-line-like
+{
+  line-height: 1.5;
+}
+
+a[href$=top] 
+{
+  padding: 0 6px;
+  background: #00b3ff;
+  color: white;
+  text-decoration: none !important;
+  font-size: small;
+}
+
+a[href$=top]:hover
+{  
+  background: goldenrod;
+}
+
+span.cm-comment
+{
+  color: magenta !important;
+  background: rgba(255,255,255,0.6);
+}
+
+span.cm-string {
+  color: #0081FF !important;
+  background: rgba(255,255,255,0.6);
+}
+
+span.cm-string-2 {
+  color: #0081FF !important;
+  background: rgba(255,255,255,0.6);
+}
+
+span.cm-def {
+  color: blueviolet !important;
+}
+
+span.cm-keyword {
+  color: teal !important;
+  font-weight: normal !important;
+  font-style: italic !important;
+}
+
+span.cm-variable {
+  color: slateblue !important;
+  font-weight: bold;
+}
+
+span.cm-variable-2 {
+  color: slateblue !important;
+}
+
+span.cm-number {
+  color: green !important;
+}
+
+span.cm-operator {
+  color: hotpink !important;
+  font-weight: normal !important;
+}
+
+span.cm-property {
+  color: slategrey !important;
+}
+
+span.cm-magic {
+  color: darkslategrey;
+  background: beige;
+}
